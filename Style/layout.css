@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+.calculator {
+	height: 700px;
+	width: 505px;
+	/* background-color: #444; */
+	background-color: #e2e3dd;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.display {
+	width: 100%;
+	flex-basis: 16.6666%;
+	background-color: #666;
+	margin-bottom: 30px;
+}
+
+.button-container {
+	width: 100%;
+	flex-basis: 83.3333333%;
+	/* background-color: #666; */
+	display: flex;
+}
+
+.row1 {
+	flex-basis: 75%;
+	height: 100%;
+	/* background-color: #777; */
+	display: flex;
+	flex-direction: column;
+}
+
+.row2 {
+	/* border-left: 2px solid white; */
+	height: 100%;
+	flex-basis: 25%;
+	/* background-color: #777; */
+	display: flex;
+	flex-direction: column;
+}
+
+.row1 .column {
+	flex-basis: 16.666%;
+	/* background-color: #888;
+	border: 1px solid white; */
+	display: flex;
+}
+
+.row2 .column {
+	flex-basis: 16.6666%;
+	/* background-color: #888;
+	border: 1px solid white; */
+}
+
+.row2 .column2 {
+	flex-basis: 33.3333%;
+	/* background-color: #888;
+	border: 1px solid white; */
+}
+
+.column .container {
+	flex-basis: 33.333%;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	/* background-color: #999;
+	border: 1px solid white; */
+	padding: 5px;
+}
+
+.row1 .column:last-child .container:first-child {
+	flex-basis: 66.666%;
+}
+
+.row1 .column:last-child .container:last-child {
+	flex-basis: 33.333%;
+}
